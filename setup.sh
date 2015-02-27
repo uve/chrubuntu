@@ -24,9 +24,8 @@ apt-get install libc6:i386 libssl1.0.0:i386
 #
 apt-get install git-core
 cd /usr/src
-git clone  https://git.chromium.org/git/chromiumos/third_party/kernel.git
-cd kernel
-git checkout origin/chromeos-3.14
+git clone https://chromium.googlesource.com/chromiumos/third_party/kernel -b chromeos-3.14 --single-branch 
+
  
 #
 # Configure the kernel

@@ -51,7 +51,7 @@ cp /usr/src/kernel/include/uapi/linux/switchdev.h /usr/src/kernel/include/uapi/l
 cp /usr/src/kernel/include/linux/switchdev.h /usr/src/kernel/include/linux/switch.h
 
 
-make-kpkg kernel_image kernel_headers
+make-kpkg kernel_image kernel_headers -j 4
  
 #
 # Backup current kernel and kernel modules

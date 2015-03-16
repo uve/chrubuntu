@@ -47,8 +47,8 @@ yes "" | make oldconfig
 #
 apt-get install kernel-package
 
-cp /usr/src/kernel/include/uapi/linux/switchdev.h /usr/src/kernel/include/uapi/linux/switch.h
-cp /usr/src/kernel/include/linux/switchdev.h /usr/src/kernel/include/linux/switch.h
+#cp /usr/src/kernel/include/uapi/linux/switchdev.h /usr/src/kernel/include/uapi/linux/switch.h
+#cp /usr/src/kernel/include/linux/switchdev.h /usr/src/kernel/include/linux/switch.h
 
 
 make-kpkg kernel_image kernel_headers -j 4
